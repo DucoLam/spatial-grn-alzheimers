@@ -1,6 +1,6 @@
 # Spatially Annotated Gene Regulatory Networks in Alzheimer's Disease
 
-**Author:** D. Lam — BSc Thesis, TU Delft (CSE3000 Research Project)
+**Author:** D. Lam — BSc Thesis, [TU Delft (CSE3000 Research Project)](https://github.com/TU-Delft-CSE/Research-Project), June 2026
 **Compute:** DAIC HPC cluster (`login.daic.tudelft.nl`, SLURM + Apptainer)
 
 Pipeline for inferring cell-specific gene regulatory networks (GRNs) with
