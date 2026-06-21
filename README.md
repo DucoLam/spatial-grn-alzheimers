@@ -39,6 +39,12 @@ data/                   only derived *.csv are tracked; heavy binaries are not (
 Every job script sets `PYTHONPATH=…/dflam/src` so `import analysis_common` resolves,
 then invokes its Python file by absolute path inside the container.
 
+### Project Scope & Experimental History
+This repository contains the complete computational workflow for the thesis. To maintain transparency regarding the research process, please note the following:
+
+* **Experimental Scripts:** The `analysis/` and `archive/` directories contain various exploratory scripts and intermediate analysis iterations. While the core pipeline is finalized, these files are preserved to provide a complete provenance of the methodology and the evolution of the results.
+* **SpaGE Imputation:** The main pipeline includes modular steps for **SpaGE**-based gene expression imputation. Please be aware that while SpaGE was tested as a method to bridge gene-panel discrepancies, these specific outputs were **not included in the final results** of this thesis. The final GRNs and spatial projections presented in the paper rely solely on the primary ScReNI and Tangram integration.
+
 ## External libraries
 
 These are treated as external dependencies and are **not** included in this repo
