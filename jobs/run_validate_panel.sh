@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH --partition=general
+#SBATCH --qos=medium
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=96GB
+#SBATCH --time=08:00:00
+#SBATCH --job-name=vpanel
+#SBATCH --output=/tudelft.net/staff-umbrella/ScReNI/dflam/slurm/logs/vpanel_%j.out
+#SBATCH --error=/tudelft.net/staff-umbrella/ScReNI/dflam/slurm/logs/vpanel_%j.err
+export PYTHONPATH="/tudelft.net/staff-umbrella/ScReNI/dflam/src:$PYTHONPATH"
+DFLAM=/tudelft.net/staff-umbrella/ScReNI/dflam
+SIF=/tudelft.net/staff-umbrella/ScReNI/bsc-screni/container.sif
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export OPENBLAS_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+echo "start $(date)  node $(hostname)  panel=$1 cell_type=$2 prefix=$3"
+apptainer exec --writable-tmpfs --bind /tudelft.net:/tudelft.net --bind "$HOME:$HOME" \
+  "$SIF" pixi run --manifest-path /opt/app/pixi.toml \
+  python -u "$DFLAM/src/pipeline/06_validate_spage_panel.py" --panel "$1" --cell_type "$2" --prefix "$3"
+echo "done $(date)"

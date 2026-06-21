@@ -1,0 +1,11 @@
+donor,merfish_cells,merfish_sections,sex,age,braak,thal,cerad,adnc,cps,apoe,cog
+H20.33.001,188386,3,Male,82,Braak IV,Thal 2,Sparse,Low,0.5228888279361776,N,No dementia
+H20.33.004,166199,5,Male,86,Braak V,Thal 5,Frequent,High,0.7250056992852697,Y,Dementia
+H20.33.012,65279,3,Female,90+,Braak III,Thal 1,Absent,Low,0.23700999690760438,N,No dementia
+H20.33.015,188680,3,Male,88,Braak V,Thal 3,Moderate,Intermediate,0.8789675660744676,N,Dementia
+H20.33.025,52088,3,Male,90+,Braak V,Thal 4,Moderate,High,0.5888818718108809,N,No dementia
+H20.33.040,49185,2,Male,90+,Braak IV,Thal 4,Frequent,Intermediate,0.43882693429869557,N,Dementia
+H20.33.044,60138,3,Male,81,Braak V,Thal 0,Absent,Not AD,0.3556318839242121,N,No dementia
+H21.33.001,70519,2,Male,80,Braak III,Thal 2,Absent,Low,0.1496163306752355,N,Dementia
+H21.33.006,30641,3,Male,90+,Braak IV,Thal 4,Sparse,Intermediate,0.8380957485349958,Y,No dementia
+H21.33.019,38095,2,Male,75,Braak 0,Thal 1,Sparse,Low,0.5174762862488702,N,No dementia

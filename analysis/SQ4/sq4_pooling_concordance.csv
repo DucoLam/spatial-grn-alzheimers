@@ -1,0 +1,5 @@
+subtype,testable,spearman_weighted_vs_equal,topk,topk_overlap,q_fdr_lt05,q_eqsec_lt05
+Astrocyte,498,0.6978214750511423,20,11,32,0
+L2/3 IT,500,0.8908075312301249,20,17,440,369
+L4 IT,500,0.8657909831639325,20,15,245,171
+Oligodendrocyte,495,0.68404460564902,20,14,0,0

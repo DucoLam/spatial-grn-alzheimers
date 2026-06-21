@@ -1,0 +1,2 @@
+cell_type,config,method,n_cells,median_um,mean_um,within_500_pct,within_1000_pct
+L2/3 IT,cross-donor,argmax,26742,4139.3722285238755,4320.1347177481,1.1554857527484856,4.363921920574378

@@ -1,0 +1,2 @@
+cell_type,config,method,n_cells,median_um,mean_um,within_500_pct,within_1000_pct
+Astrocyte,cross-donor,argmax,27000,3640.551593308357,3914.4157299792387,1.2962962962962963,5.411111111111111

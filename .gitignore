@@ -1,0 +1,36 @@
+# Heavy binaries & raw data — kept on the DAIC cluster, NOT on GitHub.
+# Tracked from data/: only small derived files (CSV / parquet). See README "Data".
+*.h5ad
+*.npz
+*.sif
+*.pkl
+# 73,956 per-cell GRN .txt files (~111 GB)
+data/wscreni_networks_pool4/
+data/wscreni_networks_*/
+
+# Logs / scratch outputs
+*.log
+*.out
+*.err
+*.zip
+slurm/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# stray scratch counter
+.mon_count
+
+# Runtime / build / scratch dirs
+tmp/
+debug/
+output/
+packages/
+torch_wheels/
+_pixi_moods_test/
+
+# External libraries (vendored on the cluster; see README for how to obtain)
+bsc-screni/
+Tangram/
+SpaGE/
